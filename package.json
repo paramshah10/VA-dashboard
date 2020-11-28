@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://warriorwellness.me/",
+  "homepage": "https://paramshah10.github.io/VA-dashboard/",
   "dependencies": {
     "@cometchat-pro/chat": "^2.0.6",
     "@fortawesome/fontawesome-free": "5.12.1",

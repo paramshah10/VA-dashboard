@@ -1,0 +1,70 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://warriorwellness.me/",
+  "dependencies": {
+    "@cometchat-pro/chat": "^2.0.6",
+    "@fortawesome/fontawesome-free": "5.12.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "chart.js": "2.9.3",
+    "classnames": "2.2.6",
+    "firebase": "^7.14.0",
+    "load-script": "^1.0.0",
+    "moment": "2.24.0",
+    "node-sass": "^4.13.1",
+    "nouislider": "14.1.1",
+    "npm-upgrade": "^2.0.3",
+    "react": "^16.13.1",
+    "react-chartjs-2": "2.9.0",
+    "react-chat-widget": "^2.1.5",
+    "react-chat-window": "^1.2.1",
+    "react-copy-to-clipboard": "5.0.2",
+    "react-datetime": "2.16.3",
+    "react-dom": "^16.13.1",
+    "react-google-maps": "9.4.5",
+    "react-messenger-customer-chat": "^0.7.2",
+    "react-messenger-send-to-messenger": "^0.2.0",
+    "react-redux": "^7.2.0",
+    "react-relay": "^9.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "reactstrap": "8.4.1",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "npm run build&&gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "@types/googlemaps": "3.39.2",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.9.19",
+    "eslint-plugin-flowtype": "3.13.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "typescript": "3.7.5"
+  }
+}

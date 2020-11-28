@@ -73,7 +73,7 @@ class Register extends React.Component {
       .then(async (user) => {
         const uid = user.user.uid;
         
-        const response = await Axios.post('https://us-central1-mentalhealth-2e530.cloudfunctions.net/createNewAccountTemplate',
+        const response = await Axios.post('https://us-central1-veterans-affairs-78bd2.cloudfunctions.net/createNewAccountTemplate',
           { uid: uid, firstName: this.state.first_name, lastName: this.state.last_name, email: this.state.email }
         );
 

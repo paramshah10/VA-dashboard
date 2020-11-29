@@ -43,6 +43,14 @@ let global_data = {
     "week": [],
     "month": []
   },
+  "step_counts": {
+    "week": [],
+    "month": []
+  },
+  "activity_pie": {
+    "day": [],
+    "week": []
+  },
   "sleep": {
     "week": {
       "total": [],
@@ -612,6 +620,123 @@ let chartExample8 = {
     }
   }
 
+let activity_pie = {
+  options: {
+      legend: {
+      display: true,
+      position: "bottom",
+      labels: {
+          usePointStyle: true,
+          padding: 20
+      }
+      },
+      tooltips: {
+          callbacks: {
+              label: function(item, data) {
+                  return data.labels[item.index] + ": " + data.datasets[item.datasetIndex].data[item.index];
+              }
+      }
+      },
+    responsive: true,
+    maintainAspectRatio: false,
+  },
+
+  data1: canvas => {
+      return {
+      labels: ["Running", "Walking", "Sitting", "Driving"],
+      datasets: [
+          {
+          label: "Breakdown by activity name in the past day",
+          data: global_data["activity_pie"]["day"],
+          backgroundColor: [
+              "#A91E2A",
+              '#ff4242',
+              '#002867',
+              '#DCDCDC'
+              ],
+          }
+      ],
+      }
+  },
+
+  data2: canvas => {
+      return {
+      labels: ["Running", "Walking", "Sitting", "Driving"],
+      datasets: [
+          {
+          label: "Breakdown by activity name in the past week",
+          data: global_data["activity_pie"]["week"],
+          backgroundColor: [
+              "#A91E2A",
+              '#ff4242',
+              '#002867',
+              '#DCDCDC'
+              ],
+          }
+      ],
+      innerWidth: 100,
+      }
+  }
+}
+
+let step_counts = {
+  options: {
+    scales: {
+    yAxes: [
+        {
+        ticks: {
+            callback: function(value) {
+            if (!(value % 5)) {
+                return value;
+            }
+            }
+        },
+        stacked: true,
+        }
+    ],
+    xAxes: [{
+      stacked: true,
+    }]
+    },
+    tooltips: {
+        callbacks: {
+            label: function(item, data) {
+            var label = data.datasets[item.datasetIndex].label || "";
+            var yLabel = item.yLabel;
+            var content = "";
+            if (data.datasets.length > 1) {
+                content += label;
+            }
+            content += " " + yLabel;
+            return content;
+            }
+    }
+    }
+  },
+  data1: canvas => {
+      return {
+      labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
+      datasets: [
+          {
+              label: "Step counts for the past week",
+              data: global_data["step_counts"]["week"],
+          }
+      ]
+      };
+  },
+  data2: canvas => {
+      return {  
+      labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+      datasets: [
+          {
+              label: "Step counts for the past month",
+              data: global_data["step_counts"]["month"],
+          }
+      ]
+      };
+  }
+}
+  
 /* dummy class to do basically the same thing that the previous code was doing
    but inside a class. This is to prevent premature running of the getChartData
    function when this file is loaded by the browser.
@@ -671,5 +796,7 @@ export {
   chartExample5, 
   chartExample6, 
   chartExample7, 
-  chartExample8
+  chartExample8,
+  step_counts,
+  activity_pie
 }

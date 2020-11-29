@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/VA-dashboard/static/css/main.533edbe8.chunk.css",
-    "main.js": "/VA-dashboard/static/js/main.04ffafe5.chunk.js",
-    "main.js.map": "/VA-dashboard/static/js/main.04ffafe5.chunk.js.map",
+    "main.js": "/VA-dashboard/static/js/main.21ce6c03.chunk.js",
+    "main.js.map": "/VA-dashboard/static/js/main.21ce6c03.chunk.js.map",
     "runtime-main.js": "/VA-dashboard/static/js/runtime-main.ef2221ce.js",
     "runtime-main.js.map": "/VA-dashboard/static/js/runtime-main.ef2221ce.js.map",
     "static/css/2.d4b746c0.chunk.css": "/VA-dashboard/static/css/2.d4b746c0.chunk.css",
-    "static/js/2.b62f7689.chunk.js": "/VA-dashboard/static/js/2.b62f7689.chunk.js",
-    "static/js/2.b62f7689.chunk.js.map": "/VA-dashboard/static/js/2.b62f7689.chunk.js.map",
+    "static/js/2.c09de773.chunk.js": "/VA-dashboard/static/js/2.c09de773.chunk.js",
+    "static/js/2.c09de773.chunk.js.map": "/VA-dashboard/static/js/2.c09de773.chunk.js.map",
     "index.html": "/VA-dashboard/index.html",
-    "precache-manifest.da26384c03d2d74841c3403d13ee0d4d.js": "/VA-dashboard/precache-manifest.da26384c03d2d74841c3403d13ee0d4d.js",
+    "precache-manifest.f78ac397d662cb1f0b804525cbab793e.js": "/VA-dashboard/precache-manifest.f78ac397d662cb1f0b804525cbab793e.js",
     "service-worker.js": "/VA-dashboard/service-worker.js",
     "static/css/2.d4b746c0.chunk.css.map": "/VA-dashboard/static/css/2.d4b746c0.chunk.css.map",
     "static/css/main.533edbe8.chunk.css.map": "/VA-dashboard/static/css/main.533edbe8.chunk.css.map",
-    "static/js/2.b62f7689.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.b62f7689.chunk.js.LICENSE.txt",
-    "static/js/main.04ffafe5.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.04ffafe5.chunk.js.LICENSE.txt",
+    "static/js/2.c09de773.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.c09de773.chunk.js.LICENSE.txt",
+    "static/js/main.21ce6c03.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.21ce6c03.chunk.js.LICENSE.txt",
     "static/media/chat-icon.svg": "/VA-dashboard/static/media/chat-icon.e0d2b748.svg",
     "static/media/all.min.css": "/VA-dashboard/static/media/fa-solid-900.cdfec5cf.woff",
     "static/media/facebook.svg": "/VA-dashboard/static/media/facebook.a64a1d0a.svg",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.ef2221ce.js",
     "static/css/2.d4b746c0.chunk.css",
-    "static/js/2.b62f7689.chunk.js",
+    "static/js/2.c09de773.chunk.js",
     "static/css/main.533edbe8.chunk.css",
-    "static/js/main.04ffafe5.chunk.js"
+    "static/js/main.21ce6c03.chunk.js"
   ]
 }

@@ -99,7 +99,7 @@ class Profile extends React.Component {
                   </Row>
                   <div className="text-center">
                     <h3>
-                      Your Name
+                      John Doe
                       <span className="font-weight-light">, 19</span>
                     </h3>
                     <div className="h5 font-weight-300">
@@ -112,7 +112,7 @@ class Profile extends React.Component {
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      University of California, Los Angeles
+                      Place of Work
                     </div>
                     {/* <hr className="my-4" />
                     <p>

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74351e98db902e59ebdcdf698392ed2b",
+    "revision": "f1281a2b77d8cf74ad3fe0934c68b56c",
     "url": "/VA-dashboard/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VA-dashboard/static/css/2.d4b746c0.chunk.css"
   },
   {
-    "revision": "2e6b3d75ea5af988d893",
+    "revision": "699aac775dfaadcccc6e",
     "url": "/VA-dashboard/static/css/main.533edbe8.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VA-dashboard/static/js/2.c09de773.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e6b3d75ea5af988d893",
-    "url": "/VA-dashboard/static/js/main.21ce6c03.chunk.js"
+    "revision": "699aac775dfaadcccc6e",
+    "url": "/VA-dashboard/static/js/main.423f4995.chunk.js"
   },
   {
     "revision": "8d0d562f4ec3c131ac27d52de65ecd17",
-    "url": "/VA-dashboard/static/js/main.21ce6c03.chunk.js.LICENSE.txt"
+    "url": "/VA-dashboard/static/js/main.423f4995.chunk.js.LICENSE.txt"
   },
   {
     "revision": "25bafe62100b0fc576fa",

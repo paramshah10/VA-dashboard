@@ -22,10 +22,10 @@ import { Container, Row, Col } from "reactstrap";
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
-import App from '../App';
+// import App from '../App';
 
 import routes from "routes.js";
-import JournalIcon from "views/examples/Journal/Journal_icon";
+// import JournalIcon from "views/examples/Journal/Journal_icon";
 import ChartsData from "variables/charts_data";
 
 class Admin extends React.Component {
@@ -103,8 +103,8 @@ class Admin extends React.Component {
           </footer>
           </Container>
         </div>
-        <App />
-        <JournalIcon/>
+        {/* <App /> */}
+        {/* <JournalIcon/> */}
         <ChartsData />
       </>
     );

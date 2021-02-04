@@ -756,7 +756,7 @@ class ChartsData extends React.Component {
     var docRef = db.collection("users").doc(uid).collection("charts")
     var doc = await docRef.get()
   
-    doc.docs.map(doc => {global_data[doc.id] = doc.data()})
+    doc.docs.map(doc => global_data[doc.id] = doc.data())
   
     global_data["stress_bar_score"] = global_data["stress_pie_score"]
     global_data["stress_bar_type"] = global_data["stress_pie_type"]

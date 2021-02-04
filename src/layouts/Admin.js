@@ -32,7 +32,7 @@ class Admin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: localStorage.getItem('loggedIn') == 'true'
+      isLoggedIn: localStorage.getItem('loggedIn') === 'true'
     }
   }
   componentDidUpdate(e) {
@@ -96,7 +96,8 @@ class Admin extends React.Component {
             <Row className="align-items-center justify-content-xl-between">
               <Col xl="6">
                 <div className="copyright text-center text-xl-left text-muted">
-                  <a className="font-weight-bold ml-1" />
+                  {/* <a className="font-weight-bold ml-1" /> */}
+                  <br />
                 </div>
               </Col>
             </Row>

@@ -36,7 +36,7 @@ class Header extends React.Component {
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
-                        {this.props.overalls["stress"] && this.props.overalls["stress"]["value_change"] == "up" ?
+                        {this.props.overalls["stress"] && this.props.overalls["stress"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress"]["percent_change"]}%
                           </span>) 
@@ -72,7 +72,7 @@ class Header extends React.Component {
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
-                        {this.props.overalls["sleep"] && this.props.overalls["sleep"]["value_change"] == "up" ?
+                        {this.props.overalls["sleep"] && this.props.overalls["sleep"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["sleep"]["percent_change"]}%
                           </span>) 
@@ -108,7 +108,7 @@ class Header extends React.Component {
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
-                        {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["value_change"] == "up" ?
+                        {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_management"]["percent_change"]}%
                           </span>) 
@@ -144,7 +144,7 @@ class Header extends React.Component {
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
-                        {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["value_change"] == "up" ?
+                        {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_events"]["percent_change"]}%
                           </span>) 

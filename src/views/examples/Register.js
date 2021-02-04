@@ -77,7 +77,7 @@ class Register extends React.Component {
           { uid: uid, firstName: this.state.first_name, lastName: this.state.last_name, email: this.state.email }
         );
 
-        if (response.code == 200 || response.message == 'Success') {
+        if (response.code === 200 || response.message === 'Success') {
           localStorage.setItem('loggedIn', true);
           console.log('User Created!');
           this.setState({
@@ -89,7 +89,7 @@ class Register extends React.Component {
       })
       .catch((error) => {
         // Handle Errors here.
-        if (error.code == "auth/email-already-in-use") {
+        if (error.code === "auth/email-already-in-use") {
           this.setState({
             email_already_in_use: true,
             showSpinner: false

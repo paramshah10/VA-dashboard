@@ -53,7 +53,7 @@ class Login extends React.Component {
 
   tryLogInUser(email, password) {
     
-    if (email == '' || password == '') {
+    if (email === '' || password === '') {
       this.setState({
         invalid_credentials: true,
       })

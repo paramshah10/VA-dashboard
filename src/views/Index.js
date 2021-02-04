@@ -133,7 +133,8 @@ class Index extends React.Component {
                             onDoubleClick={(e) => {
                               e.preventDefault();
                               this.state.showTextBox[incident.index] = true; 
-                              this.forceUpdate();
+                              // this.forceUpdate();
+                              this.setState();
                             }}
                           />
                           <UncontrolledTooltip delay={0} placement='right' trigger="hover focus" target={'Box'+incident.index}>
@@ -148,6 +149,13 @@ class Index extends React.Component {
                                 e.preventDefault();
                                 this.state.showTextBox[incident.index] = false;
                                 this.forceUpdate();
+                              //   this.setState(({showTextBox}) => ({
+                              //     showTextBox: [
+                              //       ...showTextBox.slice(0,incident.index),
+                              //       false,
+                              //       ...showTextBox.slice(incident.index + 1)
+                              //     ]
+                              // }));
                               }}
                             >Save</Button>
                           }

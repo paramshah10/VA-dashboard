@@ -26,7 +26,7 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Spinner
+    // Spinner
 } from 'reactstrap'
 
 import { connect } from 'react-redux';
@@ -51,21 +51,19 @@ class Charts extends React.Component {
 
     toggleNavs = (e, row, col, data) => {
       e.preventDefault();
-      if (row == 1) {
-        if (col == 1){ //stress
+      if (row === 1) {
+        if (col === 1){ //stress
           this.setState({
             activeNav1: data
           });
-          if (data == 1){
+          if (data === 1){
             this.setState({
-              chartExample1Data:
-                this.state.chartExample1Data = "data1"
+              chartExample1Data: "data1"
             });
           }
           else{
             this.setState({
-              chartExample1Data:
-                this.state.chartExample1Data = "data2"
+              chartExample1Data: "data2"
             });
           }
         }
@@ -73,35 +71,31 @@ class Charts extends React.Component {
           this.setState({
             activeNav2: data
           });
-          if (data == 1){
+          if (data === 1){
             this.setState({
-              chartExample2Data:
-                this.state.chartExample2Data = "data1"
+              chartExample2Data: "data1"
             });
           }
           else {
             this.setState({
-              chartExample2Data:
-                this.state.chartExample2Data = "data2"
+              chartExample2Data: "data2"
             });
           }
         }
       }
       else{
-        if (col == 1){
+        if (col === 1){
           this.setState({
             activeNav3: data
           });
-          if (data == 1){
+          if (data === 1){
             this.setState({
-              chartExample3Data:
-                this.state.chartExample3Data = "data1"
+              chartExample3Data: "data1"
             });
           }
           else {
             this.setState({
-              chartExample3Data:
-                this.state.chartExample3Data = "data2"
+              chartExample3Data: "data2"
             });
           }
         }
@@ -109,16 +103,14 @@ class Charts extends React.Component {
           this.setState({
             activeNav4: data
           });
-          if (data == 1){
+          if (data === 1){
             this.setState({
-              chartExample4Data:
-                this.state.chartExample4Data = "data1"
+              chartExample4Data: "data1"
             });
           }
           else {
             this.setState({
-              chartExample4Data:
-                this.state.chartExample4Data = "data2"
+              chartExample4Data: "data2"
             });
           }
         }

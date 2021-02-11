@@ -643,7 +643,7 @@ let activity_pie = {
 
   data1: canvas => {
       return {
-      labels: ["Running", "Walking", "Sitting", "Driving"],
+      labels: ["Running", "Walking", "Sitting", "In a vehicle"],
       datasets: [
           {
           label: "Breakdown by activity name in the past day",
@@ -661,7 +661,7 @@ let activity_pie = {
 
   data2: canvas => {
       return {
-      labels: ["Running", "Walking", "Sitting", "Driving"],
+      labels: ["Running", "Walking", "Sitting", "In a vehicle"],
       datasets: [
           {
           label: "Breakdown by activity name in the past week",

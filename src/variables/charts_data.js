@@ -162,7 +162,15 @@ let chartExample1 = {
 
   // Example 2 of Chart inside src/views/Index.js (Total orders - Card)
 let chartExample2 = {
-options: {
+  options: {
+    legend: {
+      display: true,
+      position: "bottom",
+      labels: {
+          usePointStyle: true,
+          padding: 20
+      }
+    },
     scales: {
     yAxes: [
         {
@@ -643,17 +651,18 @@ let activity_pie = {
 
   data1: canvas => {
       return {
-      labels: ["Running", "Walking", "Sitting", "In a vehicle"],
+      labels: ["Running", "Walking", "Sitting", "In a vehicle", "Biking"],
       datasets: [
           {
           label: "Breakdown by activity name in the past day",
           data: global_data["activity_pie"]["day"],
           backgroundColor: [
-              "#A91E2A",
-              '#ff4242',
-              '#002867',
-              '#DCDCDC'
-              ],
+            "#A91E2A",
+            '#ff4242',
+            '#002867',
+            '#DCDCDC',
+            "#228B22",
+            ],
           }
       ],
       }
@@ -661,17 +670,18 @@ let activity_pie = {
 
   data2: canvas => {
       return {
-      labels: ["Running", "Walking", "Sitting", "In a vehicle"],
+      labels: ["Running", "Walking", "Sitting", "In a vehicle", "Biking"],
       datasets: [
           {
           label: "Breakdown by activity name in the past week",
           data: global_data["activity_pie"]["week"],
           backgroundColor: [
-              "#A91E2A",
-              '#ff4242',
-              '#002867',
-              '#DCDCDC'
-              ],
+            "#A91E2A",
+            '#ff4242',
+            '#002867',
+            '#DCDCDC',
+            "#228B22",
+            ],
           }
       ],
       innerWidth: 100,

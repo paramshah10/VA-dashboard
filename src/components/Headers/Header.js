@@ -45,7 +45,7 @@ class Header extends React.Component {
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress"] && this.props.overalls["stress"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -81,7 +81,7 @@ class Header extends React.Component {
                             <i className="fa fa-arrow-down" /> {this.props.overalls["sleep"] && this.props.overalls["sleep"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -117,7 +117,7 @@ class Header extends React.Component {
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>

@@ -169,71 +169,7 @@ class Graphs extends Component {
             </div>
           }
           <Row>
-              <Col className="mb-5 mb-xl-0" xl="8">
-              <Card className="bg-gradient-default shadow">
-                  <CardHeader className="bg-transparent">
-                  <Row className="align-items-center">
-                      <div className="col">
-                      <h6 className="text-uppercase text-light ls-1 mb-1">
-                          Overview
-                      </h6>
-                      <h2 className="text-white mb-0">Stress Score</h2>
-                      </div>
-                      <div className="col">
-                      <Nav className="justify-content-end" pills>
-                          <NavItem>
-                          <NavLink
-                              className={classnames("py-2 px-3", {
-                              active: this.state.activeNav1 === 1
-                              })}
-                              href="#pablo"
-                              onClick={e => this.toggleNavs(e, 1, 1, 1)}
-                          >
-                              <span className="d-none d-md-block">Day</span>
-                              <span className="d-md-none">D</span>
-                          </NavLink>
-                          </NavItem>
-                          <NavItem>
-                          <NavLink
-                              className={classnames("py-2 px-3", {
-                              active: this.state.activeNav1 === 2
-                              })}
-                              data-toggle="tab"
-                              href="#pablo"
-                              onClick={e => this.toggleNavs(e, 1, 1, 2)}
-                          >
-                              <span className="d-none d-md-block">Week</span>
-                              <span className="d-md-none">W</span>
-                          </NavLink>
-                          </NavItem>
-                          <NavItem>
-                          <NavLink
-                              className={classnames("py-2 px-3", {
-                              active: this.state.activeNav1 === 3
-                              })}
-                              href="#pablo"
-                              onClick={e => this.toggleNavs(e, 1, 1, 3)}
-                          >
-                              <span className="d-none d-md-block">Month</span>
-                              <span className="d-md-none">M</span>
-                          </NavLink>
-                          </NavItem>
-                      </Nav>
-                      </div>
-                  </Row>
-                  </CardHeader>
-                  <CardBody>
-                  {/* Chart */}
-                  <div className="chart">
-                      <Line
-                      data={chartExample1[this.state.chartExample1Data]}
-                      options={chartExample1.options}
-                      getDatasetAtEvent={e => console.log(e)}
-                      />
-                  </div>
-                  </CardBody>
-              </Card>
-              </Col>
+
               <Col xl="4">
               <Card className="shadow">
                   <CardHeader className="bg-transparent">
@@ -242,7 +178,7 @@ class Graphs extends Component {
                       <h6 className="text-uppercase text-muted ls-1 mb-1">
                           Overview
                       </h6>
-                      <h2 className="mb-0">Sleep</h2>
+                      <h2 className="mb-0">Sleep (hours)</h2>
                       </div>
                       <div>
                       <Nav className="justify-content-end" pills>
@@ -408,7 +344,7 @@ class Graphs extends Component {
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="mb-0">Stress Breakdown (by score)</h2>
+                    <h2 className="mb-0">Social Activities</h2>
                     </div>
                     <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -454,60 +390,7 @@ class Graphs extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="mb-5 mb-xl-0" xl="6">
-              <Card className="shadow">
-              <CardHeader className="bg-transparent">
-                  <Row className="align-items-center">
-                    <div className="col">
-                    <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Overview
-                    </h6>
-                    <h2 className="mb-0">Stress Breakdown (by type)</h2>
-                    </div>
-                    <div className="col">
-                    <Nav className="justify-content-end" pills>
-                        <NavItem>
-                        <NavLink
-                            className={classnames("py-2 px-3", {
-                            active: this.state.activeNav4 === 1
-                            })}
-                            href="#pablo"
-                            onClick={e => this.toggleNavs(e, 3, 2, 1)}
-                            // onClick={e => e.preventDefault()}
-                            >
-                            <span className="d-none d-md-block">Week</span>
-                            <span className="d-md-none">W</span>
-                        </NavLink>
-                        </NavItem>
-                        <NavItem>
-                        <NavLink
-                            className={classnames("py-2 px-3", {
-                            active: this.state.activeNav4 === 2
-                            })}
-                            href="#pablo"
-                            onClick={e => this.toggleNavs(e, 3, 2, 2)}
-                            // onClick={e => e.preventDefault()}
-                            >
-                            <span className="d-none d-md-block">Month</span>
-                            <span className="d-md-none">M</span>
-                        </NavLink>
-                        </NavItem>
-                    </Nav>
-                    </div>
-                  </Row>
-              </CardHeader>
-              <CardBody>
-                {/* Chart */}
-                <div className="chart">
-                    <Pie
-                    data={chartExample4[this.state.chartExample4Data]}
-                    options={chartExample4.options}
-                    getDatasetAtEvent={e => console.log(e)}
-                    />
-                </div>
-                </CardBody>
-              </Card>
-            </Col>
+
           </Row>
         </>
       );

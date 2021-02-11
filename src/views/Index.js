@@ -74,7 +74,7 @@ class Index extends React.Component {
     let sort = !this.state.stressSort;
     this.setState({
       stressSort: !this.state.stressSort,
-      stressIncidents: sort ? 
+      stressIncidents: sort ?
         this.state.stressIncidents.sort((a,b) => b.stress_score - a.stress_score) : this.state.stressIncidents.sort((a,b) => a.stress_score - b.stress_score),
     });
   }
@@ -86,7 +86,7 @@ class Index extends React.Component {
         {/* Page content */}
         <Container className="mt--7" fluid>
           <Graphs />
-          <Row className="mt-5">
+          {/* <Row className="mt-5">
             <Col className="mb-5 mb-xl-0" xl="12">
               <Card className="shadow">
                 <CardHeader className="border-0">
@@ -107,11 +107,11 @@ class Index extends React.Component {
                     </tr>
                   </thead>
                   <tbody>
-                    {this.state.stressIncidents.map(incident => 
+                    {this.state.stressIncidents.map(incident =>
                       <tr>
                         <td key={String(incident.index)+String(incident.index)}>
-                          <Input 
-                            type="select" 
+                          <Input
+                            type="select"
                             defaultValue={incident.reason}
                             onChange={(e) => console.log(`stress reason changed to ${e.target.value}`)}
                           >
@@ -132,16 +132,16 @@ class Index extends React.Component {
                             plaintext={!this.state.showTextBox[incident.index]}
                             onDoubleClick={(e) => {
                               e.preventDefault();
-                              this.state.showTextBox[incident.index] = true; 
+                              this.state.showTextBox[incident.index] = true;
                               // this.forceUpdate();
                               this.setState();
                             }}
                           />
                           <UncontrolledTooltip delay={0} placement='right' trigger="hover focus" target={'Box'+incident.index}>
                             Double Click Me to Edit!
-                          </UncontrolledTooltip>                          
+                          </UncontrolledTooltip>
                           {
-                            this.state.showTextBox[incident.index] && 
+                            this.state.showTextBox[incident.index] &&
                             <Button
                               color='default'
                               size="sm"
@@ -166,7 +166,7 @@ class Index extends React.Component {
                 </Table>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </>
     );

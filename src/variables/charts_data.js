@@ -113,11 +113,11 @@ let chartExample1 = {
             var label = data.datasets[item.datasetIndex].label || "";
             var yLabel = item.yLabel;
             var content = "";
-  
+
             if (data.datasets.length > 1) {
               content += label;
             }
-  
+
             // content += '$' + yLabel + 'k';
             content += yLabel;
             return content;
@@ -159,7 +159,7 @@ let chartExample1 = {
       };
     }
 };
-  
+
   // Example 2 of Chart inside src/views/Index.js (Total orders - Card)
 let chartExample2 = {
 options: {
@@ -222,7 +222,7 @@ data1: canvas => {//Sleep by week
     };
 },
 data2: canvas => { //sleep by month
-    return {  
+    return {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
     datasets: [
         {
@@ -268,13 +268,13 @@ let chartExample3 = {
 
     data1: canvas => {
         return {
-        labels: ["Very High (20-25)", "High (15-20)", "Moderate (10-15)", "Low (0-15)"],
+        labels: ["Calling", "Messaging", "Social Media", "No social interaction"],
         datasets: [
             {
             label: "Stress count by score in the past month",
             data: global_data["stress_pie_score"]["week"],//[1, 5, 4, 7],
             backgroundColor: [
-                "#A91E2A",
+                "#228B22",
                 '#ff4242',
                 '#002867',
                 '#DCDCDC'
@@ -424,7 +424,7 @@ let chartExample5 = {
     };
   }
 };
-  
+
   // Example 2 of Chart inside src/views/Index.js (Total orders - Card)
 let chartExample6 = {
 options: {
@@ -473,7 +473,7 @@ data1: canvas => {
     };
 },
 data2: canvas => {
-    return {  
+    return {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
     datasets: [
         {
@@ -725,7 +725,7 @@ let step_counts = {
       };
   },
   data2: canvas => {
-      return {  
+      return {
       labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
       datasets: [
           {
@@ -736,13 +736,13 @@ let step_counts = {
       };
   }
 }
-  
+
 /* dummy class to do basically the same thing that the previous code was doing
    but inside a class. This is to prevent premature running of the getChartData
    function when this file is loaded by the browser.
-   
+
    Problem: since the function was not in a component, it ran as soon as the file
-   loaded (when the website is loaded) and this makes it run when the credentials 
+   loaded (when the website is loaded) and this makes it run when the credentials
    needed to pull data from firstore are not yet available.
 
    Solution: put the code in a dummy class so that it is only loaded when the parent
@@ -752,12 +752,12 @@ let step_counts = {
 class ChartsData extends React.Component {
   getChartData = async () => {
     const uid = localStorage.getItem("uid")
-  
+
     var docRef = db.collection("users").doc(uid).collection("charts")
     var doc = await docRef.get()
-  
+
     doc.docs.map(doc => global_data[doc.id] = doc.data())
-  
+
     global_data["stress_bar_score"] = global_data["stress_pie_score"]
     global_data["stress_bar_type"] = global_data["stress_pie_type"]
 
@@ -789,13 +789,13 @@ export default connect(
 )(ChartsData);
 
 export {
-  chartExample1, 
-  chartExample2, 
-  chartExample3, 
-  chartExample4, 
-  chartExample5, 
-  chartExample6, 
-  chartExample7, 
+  chartExample1,
+  chartExample2,
+  chartExample3,
+  chartExample4,
+  chartExample5,
+  chartExample6,
+  chartExample7,
   chartExample8,
   step_counts,
   activity_pie

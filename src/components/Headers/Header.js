@@ -23,7 +23,7 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Stress Score
+                            Miles Walked
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             {this.props.overalls["stress"] && this.props.overalls["stress"]["score"]}
@@ -39,9 +39,9 @@ class Header extends React.Component {
                         {this.props.overalls["stress"] && this.props.overalls["stress"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress"]["percent_change"]}%
-                          </span>) 
-                          : 
-                          (<span className="text-success mr-2">
+                          </span>)
+                          :
+                          (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress"] && this.props.overalls["stress"]["percent_change"]}%
                           </span>)
                           }{" "}
@@ -75,8 +75,8 @@ class Header extends React.Component {
                         {this.props.overalls["sleep"] && this.props.overalls["sleep"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["sleep"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["sleep"] && this.props.overalls["sleep"]["percent_change"]}%
                           </span>)
@@ -95,7 +95,7 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Stress Management
+                            Social Activity
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["score"]} mins/day
@@ -111,8 +111,8 @@ class Header extends React.Component {
                         {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_management"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["percent_change"]}%
                           </span>)
@@ -122,7 +122,7 @@ class Header extends React.Component {
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="6" xl="3">
+                {/* <Col lg="6" xl="3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody>
                       <Row>
@@ -147,8 +147,8 @@ class Header extends React.Component {
                         {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_events"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["percent_change"]}%
                           </span>)
@@ -157,7 +157,7 @@ class Header extends React.Component {
                       </p>
                     </CardBody>
                   </Card>
-                </Col>
+                </Col> */}
               </Row>
             </div>
           </Container>

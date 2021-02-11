@@ -233,7 +233,7 @@ class Graphs extends Component {
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="mb-0">Activity Breakdown</h2>
+                    <h2 className="mb-0">Activity Breakdown (minutes)</h2>
                     </div>
                     <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -344,7 +344,7 @@ class Graphs extends Component {
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="mb-0">Social Activities</h2>
+                    <h2 className="mb-0">Social Activities (minutes)</h2>
                     </div>
                     <div className="col">
                     <Nav className="justify-content-end" pills>

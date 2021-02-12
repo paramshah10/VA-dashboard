@@ -23,10 +23,10 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Stress Score
+                            Steps Taken
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            {this.props.overalls["stress"] && this.props.overalls["stress"]["score"]}
+                            {this.props.overalls["step_counts"] && this.props.overalls["step_counts"]["score"]}
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -36,16 +36,16 @@ class Header extends React.Component {
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
-                        {this.props.overalls["stress"] && this.props.overalls["stress"]["value_change"] === "up" ?
+                        {this.props.overalls["step_counts"] && this.props.overalls["step_counts"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
-                            <i className="fa fa-arrow-up" /> {this.props.overalls["stress"]["percent_change"]}%
-                          </span>) 
-                          : 
-                          (<span className="text-success mr-2">
-                            <i className="fa fa-arrow-down" /> {this.props.overalls["stress"] && this.props.overalls["stress"]["percent_change"]}%
+                            <i className="fa fa-arrow-up" /> {this.props.overalls["step_counts"]["percent_change"]}%
+                          </span>)
+                          :
+                          (<span className="text-danger mr-2">
+                            <i className="fa fa-arrow-down" /> {this.props.overalls["step_counts"] && this.props.overalls["step_counts"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -75,13 +75,13 @@ class Header extends React.Component {
                         {this.props.overalls["sleep"] && this.props.overalls["sleep"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["sleep"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["sleep"] && this.props.overalls["sleep"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -95,7 +95,7 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Stress Management
+                            Social Activity
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["score"]} mins/day
@@ -111,18 +111,18 @@ class Header extends React.Component {
                         {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["value_change"] === "up" ?
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_management"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress_management"] && this.props.overalls["stress_management"]["percent_change"]}%
                           </span>)
                           }{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">Last seven days</span>
                       </p>
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="6" xl="3">
+                {/* <Col lg="6" xl="3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody>
                       <Row>
@@ -147,8 +147,8 @@ class Header extends React.Component {
                         {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["value_change"] === "up" ?
                           (<span className="text-danger mr-2">
                             <i className="fa fa-arrow-up" /> {this.props.overalls["stress_events"]["percent_change"]}%
-                          </span>) 
-                          : 
+                          </span>)
+                          :
                           (<span className="text-success mr-2">
                             <i className="fa fa-arrow-down" /> {this.props.overalls["stress_events"] && this.props.overalls["stress_events"]["percent_change"]}%
                           </span>)
@@ -157,7 +157,7 @@ class Header extends React.Component {
                       </p>
                     </CardBody>
                   </Card>
-                </Col>
+                </Col> */}
               </Row>
             </div>
           </Container>

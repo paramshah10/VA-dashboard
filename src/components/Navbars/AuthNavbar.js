@@ -38,7 +38,7 @@ class AdminNavbar extends React.Component {
         >
           <Container className="px-4">
             <NavbarBrand>
-              <img alt="..." src={require("assets/img/theme/warrior_wellness.png")} />
+              <img alt="..." src={require("assets/img/theme/vt_icon.png")} />
             </NavbarBrand>
             <button className="navbar-toggler" id="navbar-collapse-main">
               <span className="navbar-toggler-icon" />
@@ -53,7 +53,7 @@ class AdminNavbar extends React.Component {
                     <Link>
                       <img
                         alt="..."
-                        src={require("assets/img/theme/warrior_wellness.png")}
+                        src={require("assets/img/theme/vt_icon.png")}
                       />
                     </Link>
                   </Col>

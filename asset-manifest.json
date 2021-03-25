@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/VA-dashboard/static/css/main.533edbe8.chunk.css",
-    "main.js": "/VA-dashboard/static/js/main.2893091e.chunk.js",
-    "main.js.map": "/VA-dashboard/static/js/main.2893091e.chunk.js.map",
-    "runtime-main.js": "/VA-dashboard/static/js/runtime-main.ef2221ce.js",
-    "runtime-main.js.map": "/VA-dashboard/static/js/runtime-main.ef2221ce.js.map",
+    "main.css": "/VA-dashboard/static/css/main.ff08e273.chunk.css",
+    "main.js": "/VA-dashboard/static/js/main.18cdc008.chunk.js",
+    "main.js.map": "/VA-dashboard/static/js/main.18cdc008.chunk.js.map",
+    "runtime-main.js": "/VA-dashboard/static/js/runtime-main.a5624e80.js",
+    "runtime-main.js.map": "/VA-dashboard/static/js/runtime-main.a5624e80.js.map",
     "static/css/2.b9e34028.chunk.css": "/VA-dashboard/static/css/2.b9e34028.chunk.css",
-    "static/js/2.c4beb648.chunk.js": "/VA-dashboard/static/js/2.c4beb648.chunk.js",
-    "static/js/2.c4beb648.chunk.js.map": "/VA-dashboard/static/js/2.c4beb648.chunk.js.map",
+    "static/js/2.6c86ec03.chunk.js": "/VA-dashboard/static/js/2.6c86ec03.chunk.js",
+    "static/js/2.6c86ec03.chunk.js.map": "/VA-dashboard/static/js/2.6c86ec03.chunk.js.map",
     "index.html": "/VA-dashboard/index.html",
-    "precache-manifest.0d761e5d4925efe980af81661d19edf7.js": "/VA-dashboard/precache-manifest.0d761e5d4925efe980af81661d19edf7.js",
+    "precache-manifest.39068c8e66e2183df365acfe1087b0bc.js": "/VA-dashboard/precache-manifest.39068c8e66e2183df365acfe1087b0bc.js",
     "service-worker.js": "/VA-dashboard/service-worker.js",
     "static/css/2.b9e34028.chunk.css.map": "/VA-dashboard/static/css/2.b9e34028.chunk.css.map",
-    "static/css/main.533edbe8.chunk.css.map": "/VA-dashboard/static/css/main.533edbe8.chunk.css.map",
-    "static/js/2.c4beb648.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.c4beb648.chunk.js.LICENSE.txt",
-    "static/js/main.2893091e.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.2893091e.chunk.js.LICENSE.txt",
+    "static/css/main.ff08e273.chunk.css.map": "/VA-dashboard/static/css/main.ff08e273.chunk.css.map",
+    "static/js/2.6c86ec03.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.6c86ec03.chunk.js.LICENSE.txt",
+    "static/js/main.18cdc008.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.18cdc008.chunk.js.LICENSE.txt",
     "static/media/all.min.css": "/VA-dashboard/static/media/fa-solid-900.cdfec5cf.woff",
     "static/media/facebook.svg": "/VA-dashboard/static/media/facebook.a64a1d0a.svg",
     "static/media/google.svg": "/VA-dashboard/static/media/google.87be59a1.svg",
     "static/media/nucleo.css": "/VA-dashboard/static/media/nucleo-icons.f82ec6ba.ttf",
     "static/media/profile_background.jpeg": "/VA-dashboard/static/media/profile_background.cdbbf803.jpeg",
     "static/media/team-4-800x800.jpg": "/VA-dashboard/static/media/team-4-800x800.942a8bda.jpg",
-    "static/media/warrior_wellness.png": "/VA-dashboard/static/media/warrior_wellness.72198801.png"
+    "static/media/vt_icon.png": "/VA-dashboard/static/media/vt_icon.ac4a8f87.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef2221ce.js",
+    "static/js/runtime-main.a5624e80.js",
     "static/css/2.b9e34028.chunk.css",
-    "static/js/2.c4beb648.chunk.js",
-    "static/css/main.533edbe8.chunk.css",
-    "static/js/main.2893091e.chunk.js"
+    "static/js/2.6c86ec03.chunk.js",
+    "static/css/main.ff08e273.chunk.css",
+    "static/js/main.18cdc008.chunk.js"
   ]
 }

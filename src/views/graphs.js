@@ -352,7 +352,7 @@ class Graphs extends Component {
                         <NavLink
                             className={classnames("py-2 px-3", {
                             // TODO(tdavis): Make this actually toggle properly
-                            active: this.state.activeNav3 === 2
+                            active: this.state.activeNav3 === 1
                             })}
                             href="#pablo"
                             onClick={e => this.toggleNavs(e, 3, 1, 1)}
@@ -365,10 +365,10 @@ class Graphs extends Component {
                         <NavItem>
                         <NavLink
                             className={classnames("py-2 px-3", {
-                            active: this.state.activeNav3 === 1
+                            active: this.state.activeNav3 === 2
                             })}
                             href="#pablo"
-                            onClick={e => this.toggleNavs(e, 3, 1, 1)}
+                            onClick={e => this.toggleNavs(e, 3, 1, 2)}
                             // onClick={e => e.preventDefault()}
                             >
                             <span className="d-none d-md-block">Week</span>

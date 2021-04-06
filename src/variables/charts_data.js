@@ -294,13 +294,13 @@ let chartExample3 = {
 
     data2: canvas => {
         return {
-        labels: ["Very High (20-25)", "High (15-20)", "Moderate (10-15)", "Low (0-15)"],
+        labels: ["Calling", "Messaging", "Social Media", "No social interaction"],
         datasets: [
             {
             label: "Stress count by score in the past month",
             data: global_data["stress_pie_score"]["month"],//[3, 25, 61, 15],
             backgroundColor: [
-                "#A91E2A",
+                "#228B22",
                 '#ff4242',
                 '#002867',
                 '#DCDCDC'

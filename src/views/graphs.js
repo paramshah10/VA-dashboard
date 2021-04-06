@@ -351,7 +351,6 @@ class Graphs extends Component {
                         <NavItem>
                         <NavLink
                             className={classnames("py-2 px-3", {
-                            // TODO(tdavis): Make this actually toggle properly
                             active: this.state.activeNav3 === 1
                             })}
                             href="#pablo"

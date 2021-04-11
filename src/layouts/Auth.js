@@ -66,7 +66,7 @@ class Auth extends React.Component {
                   <Col lg="5" md="6">
                     <h1 className="text-white">Welcome!</h1>
                     <p className="text-lead text-light">
-                      Login or create new account to view your dashboard!
+                      Log in or create new account to view your dashboard!
                     </p>
                   </Col>
                 </Row>

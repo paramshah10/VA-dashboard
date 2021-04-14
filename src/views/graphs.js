@@ -104,9 +104,14 @@ class Graphs extends Component {
               chartExample5Data: "data1"
             });
           }
-          else {
+          else if (data === 2){
             this.setState({
               chartExample5Data: "data2"
+            });
+          }
+          else {
+            this.setState({
+              chartExample5Data: "data3"
             });
           }
         }
@@ -136,9 +141,14 @@ class Graphs extends Component {
               chartExample3Data: "data1"
             });
           }
-          else {
+          else if (data === 2){
             this.setState({
               chartExample3Data: "data2"
+            });
+          }
+          else {
+            this.setState({
+              chartExample3Data: "data3"
             });
           }
         }
@@ -263,6 +273,19 @@ class Graphs extends Component {
                             <span className="d-md-none">W</span>
                         </NavLink>
                         </NavItem>
+                        <NavItem>
+                        <NavLink
+                            className={classnames("py-2 px-3", {
+                            active: this.state.activeNav5 === 3
+                            })}
+                            href="#pablo"
+                            onClick={e => this.toggleNavs(e, 2, 1, 3)}
+                            // onClick={e => e.preventDefault()}
+                            >
+                            <span className="d-none d-md-block">Month</span>
+                            <span className="d-md-none">M</span>
+                        </NavLink>
+                        </NavItem>
                     </Nav>
                     </div>
                   </Row>
@@ -372,6 +395,19 @@ class Graphs extends Component {
                             >
                             <span className="d-none d-md-block">Week</span>
                             <span className="d-md-none">W</span>
+                        </NavLink>
+                        </NavItem>
+                        <NavItem>
+                        <NavLink
+                            className={classnames("py-2 px-3", {
+                            active: this.state.activeNav3 === 3
+                            })}
+                            href="#pablo"
+                            onClick={e => this.toggleNavs(e, 3, 1, 3)}
+                            // onClick={e => e.preventDefault()}
+                            >
+                            <span className="d-none d-md-block">Month</span>
+                            <span className="d-md-none">M</span>
                         </NavLink>
                         </NavItem>
                     </Nav>

@@ -49,7 +49,8 @@ let global_data = {
   },
   "activity_pie": {
     "day": [],
-    "week": []
+    "week": [],
+    "month": []
   },
   "sleep": {
     "week": {
@@ -66,6 +67,7 @@ let global_data = {
     }
   },
   "stress_pie_score": {
+    "day": [],
     "week": [],
     "month": [],
   },
@@ -279,8 +281,8 @@ let chartExample3 = {
         labels: ["Calling", "Messaging", "Social Media", "No social interaction"],
         datasets: [
             {
-            label: "Stress count by score in the past month",
-            data: global_data["stress_pie_score"]["week"],//[1, 5, 4, 7],
+            label: "Social activity in the past day",
+            data: global_data["stress_pie_score"]["day"],//[1, 5, 4, 7],
             backgroundColor: [
                 "#228B22",
                 '#ff4242',
@@ -297,7 +299,26 @@ let chartExample3 = {
         labels: ["Calling", "Messaging", "Social Media", "No social interaction"],
         datasets: [
             {
-            label: "Stress count by score in the past month",
+            label: "Social activity in the past week",
+            data: global_data["stress_pie_score"]["week"],//[3, 25, 61, 15],
+            backgroundColor: [
+                "#228B22",
+                '#ff4242',
+                '#002867',
+                '#DCDCDC'
+                ],
+            }
+        ],
+        innerWidth: 100,
+        }
+    },
+    
+    data3: canvas => {
+        return {
+        labels: ["Calling", "Messaging", "Social Media", "No social interaction"],
+        datasets: [
+            {
+            label: "Social activity in the past month",
             data: global_data["stress_pie_score"]["month"],//[3, 25, 61, 15],
             backgroundColor: [
                 "#228B22",
@@ -675,6 +696,26 @@ let activity_pie = {
           {
           label: "Breakdown by activity name in the past week",
           data: global_data["activity_pie"]["week"],
+          backgroundColor: [
+            "#A91E2A",
+            '#ff4242',
+            '#002867',
+            '#DCDCDC',
+            "#228B22",
+            ],
+          }
+      ],
+      innerWidth: 100,
+      }
+  },
+
+  data3: canvas => {
+      return {
+      labels: ["Running", "Walking", "Sitting", "In a vehicle", "Biking"],
+      datasets: [
+          {
+          label: "Breakdown by activity name in the past month",
+          data: global_data["activity_pie"]["month"],
           backgroundColor: [
             "#A91E2A",
             '#ff4242',

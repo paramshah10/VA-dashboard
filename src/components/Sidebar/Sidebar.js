@@ -39,6 +39,9 @@ import {
   Col
 } from "reactstrap";
 
+import * as firebase from "firebase/app";
+import "firebase/auth";
+
 class Sidebar extends React.Component {
   state = {
     collapseOpen: false
@@ -83,6 +86,12 @@ class Sidebar extends React.Component {
       }
     });
   };
+
+  tryLogOut() {
+    localStorage.setItem('loggedIn', false)
+    firebase.auth().signOut();
+  }
+
   render() {
     const { bgColor, routes, logo } = this.props;
     let navbarBrandProps;
@@ -148,7 +157,7 @@ class Sidebar extends React.Component {
                   <span>Settings</span>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem to="/auth/login" tag={Link} onClick={e => {e.preventDefault(); window.location.href = "/auth/login"}}>
+                <DropdownItem to="/auth/login" tag={Link} onClick={e => this.tryLogOut()}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
                 </DropdownItem>

@@ -106,14 +106,6 @@ class Profile extends React.Component {
                       <i className="ni location_pin mr-2" />
                       Los Angeles, United States
                     </div>
-                    <div className="h5 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      Your Work Title
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      Place of Work
-                    </div>
                     {/* <hr className="my-4" />
                     <p>
                       Ryan — the name taken by Melbourne-raised, Brooklyn-based
@@ -216,81 +208,6 @@ class Profile extends React.Component {
                               id="input-last-name"
                               placeholder="Last name"
                               type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                    </div>
-                    <hr className="my-4" />
-                    {/* Address */}
-                    <h6 className="heading-small text-muted mb-4">
-                      Contact information
-                    </h6>
-                    <div className="pl-lg-4">
-                      <Row>
-                        <Col md="12">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-address"
-                            >
-                              Address
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-address"
-                              placeholder="Home Address"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-city"
-                            >
-                              City
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-city"
-                              placeholder="City"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-country"
-                            >
-                              Country
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-country"
-                              placeholder="Country"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col lg="4">
-                          <FormGroup>
-                            <label
-                              className="form-control-label"
-                              htmlFor="input-country"
-                            >
-                              Postal code
-                            </label>
-                            <Input
-                              className="form-control-alternative"
-                              id="input-postal-code"
-                              placeholder="Postal code"
-                              type="number"
                             />
                           </FormGroup>
                         </Col>

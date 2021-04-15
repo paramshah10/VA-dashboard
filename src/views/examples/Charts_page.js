@@ -123,58 +123,6 @@ class Charts extends React.Component {
         <div className="header bg-gradient-info pb-8 pt-5 pt-md-8"/>
         <Container className="mt--7" fluid>
             <Row>
-                <Col className="mb-5 mb-xl-0" xl="5">
-                <Card className="shadow">
-                    <CardHeader className="bg-transparent">
-                    <Row className="align-items-center">
-                        <div className="col">
-                        <h6 className="text-uppercase text-muted ls-1 mb-1">
-                            Overview
-                        </h6>
-                        <h2 className="mb-0">Stress Management</h2>
-                        </div>
-                        <div>
-                        <Nav className="justify-content-end" pills>
-                            <NavItem>
-                            <NavLink
-                                className={classnames("py-2 px-3", {
-                                active: this.state.activeNav2 === 1
-                                })}
-                                href="#pablo"
-                                onClick={e => this.toggleNavs(e, 1, 2, 1)}
-                                >
-                                <span className="d-none d-md-block">Week</span>
-                                <span className="d-md-none">W</span>
-                            </NavLink>
-                            </NavItem>
-                            <NavItem>
-                            <NavLink
-                                className={classnames("py-2 px-3", {
-                                active: this.state.activeNav2 === 2
-                                })}
-                                href="#pablo"
-                                onClick={e => this.toggleNavs(e, 1, 2, 2)}
-                                >
-                                <span className="d-none d-md-block">Month</span>
-                                <span className="d-md-none">M</span>
-                            </NavLink>
-                            </NavItem>
-                        </Nav>
-                        </div>
-                    </Row>
-                    </CardHeader>
-                    <CardBody>
-                    {/* Chart */}
-                    <div className="chart">
-                        <Bar
-                        data={chartExample2[this.state.chartExample2Data]}
-                        options={chartExample2.options}
-                        getDatasetAtEvent={e => console.log(e)}
-                        />
-                    </div>
-                    </CardBody>
-                </Card>
-                </Col>
                 <Col className="mb-5 mb-xl-0" xl="7">
                 <Card className="bg-gradient-default shadow">
                     <CardHeader className="bg-transparent">

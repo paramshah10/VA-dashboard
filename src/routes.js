@@ -19,7 +19,7 @@ import Index from "views/Index.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
-import Charts from "views/examples/Charts_page.js";
+// import Charts from "views/examples/Charts_page.js";
 // import Journal from "views/examples/Journal/Journal.js";
 
 var routes = [
@@ -37,13 +37,13 @@ var routes = [
     component: Profile,
     layout: "/admin"
   },
-  {
-    path: "/charts",
-    name: "Charts",
-    icon: "ni ni-bullet-list-67 text-red",
-    component: Charts,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/charts",
+  //   name: "Charts",
+  //   icon: "ni ni-bullet-list-67 text-red",
+  //   component: Charts,
+  //   layout: "/admin"
+  // },
   {
     path: "/login",
     name: "Login",

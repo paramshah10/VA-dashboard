@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/VA-dashboard/static/css/main.533edbe8.chunk.css",
-    "main.js": "/VA-dashboard/static/js/main.b9196dea.chunk.js",
-    "main.js.map": "/VA-dashboard/static/js/main.b9196dea.chunk.js.map",
+    "main.js": "/VA-dashboard/static/js/main.854f385a.chunk.js",
+    "main.js.map": "/VA-dashboard/static/js/main.854f385a.chunk.js.map",
     "runtime-main.js": "/VA-dashboard/static/js/runtime-main.ef2221ce.js",
     "runtime-main.js.map": "/VA-dashboard/static/js/runtime-main.ef2221ce.js.map",
     "static/css/2.b9e34028.chunk.css": "/VA-dashboard/static/css/2.b9e34028.chunk.css",
-    "static/js/2.b599f1df.chunk.js": "/VA-dashboard/static/js/2.b599f1df.chunk.js",
-    "static/js/2.b599f1df.chunk.js.map": "/VA-dashboard/static/js/2.b599f1df.chunk.js.map",
+    "static/js/2.3cfa6150.chunk.js": "/VA-dashboard/static/js/2.3cfa6150.chunk.js",
+    "static/js/2.3cfa6150.chunk.js.map": "/VA-dashboard/static/js/2.3cfa6150.chunk.js.map",
     "index.html": "/VA-dashboard/index.html",
-    "precache-manifest.08d8d38de9cda86fdb311e8ed5d01782.js": "/VA-dashboard/precache-manifest.08d8d38de9cda86fdb311e8ed5d01782.js",
+    "precache-manifest.964b43de5efe97415c8965086ce707d7.js": "/VA-dashboard/precache-manifest.964b43de5efe97415c8965086ce707d7.js",
     "service-worker.js": "/VA-dashboard/service-worker.js",
     "static/css/2.b9e34028.chunk.css.map": "/VA-dashboard/static/css/2.b9e34028.chunk.css.map",
     "static/css/main.533edbe8.chunk.css.map": "/VA-dashboard/static/css/main.533edbe8.chunk.css.map",
-    "static/js/2.b599f1df.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.b599f1df.chunk.js.LICENSE.txt",
-    "static/js/main.b9196dea.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.b9196dea.chunk.js.LICENSE.txt",
+    "static/js/2.3cfa6150.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/2.3cfa6150.chunk.js.LICENSE.txt",
+    "static/js/main.854f385a.chunk.js.LICENSE.txt": "/VA-dashboard/static/js/main.854f385a.chunk.js.LICENSE.txt",
     "static/media/all.min.css": "/VA-dashboard/static/media/fa-solid-900.cdfec5cf.woff",
     "static/media/facebook.svg": "/VA-dashboard/static/media/facebook.a64a1d0a.svg",
     "static/media/google.svg": "/VA-dashboard/static/media/google.87be59a1.svg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.ef2221ce.js",
     "static/css/2.b9e34028.chunk.css",
-    "static/js/2.b599f1df.chunk.js",
+    "static/js/2.3cfa6150.chunk.js",
     "static/css/main.533edbe8.chunk.css",
-    "static/js/main.b9196dea.chunk.js"
+    "static/js/main.854f385a.chunk.js"
   ]
 }

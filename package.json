@@ -20,8 +20,6 @@
     "npm-upgrade": "^2.0.3",
     "react": "^16.13.1",
     "react-chartjs-2": "2.9.0",
-    "react-chat-widget": "^2.1.5",
-    "react-chat-window": "^1.2.1",
     "react-copy-to-clipboard": "5.0.2",
     "react-datetime": "2.16.3",
     "react-dom": "^16.13.1",
@@ -59,11 +57,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "@types/googlemaps": "3.39.2",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.9.19",
     "eslint-plugin-flowtype": "3.13.0",
+    "gh-pages": "^2.2.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
     "typescript": "3.7.5"

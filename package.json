@@ -14,7 +14,7 @@
     "classnames": "2.2.6",
     "firebase": "^7.14.0",
     "load-script": "^1.0.0",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "node-sass": "^4.13.1",
     "nouislider": "14.1.1",
     "npm-upgrade": "^2.0.3",
